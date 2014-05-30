@@ -1,0 +1,14 @@
+{
+  "name": "MMD.js",
+  "homepage": "https://github.com/oimou/MMD.js",
+  "_release": "f8a2fae1d1",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "f8a2fae1d1bcd782525389443ab1afcc1e150d80"
+  },
+  "_source": "git://github.com/oimou/MMD.js.git",
+  "_target": "*",
+  "_originalSource": "oimou/MMD.js",
+  "_direct": true
+}
