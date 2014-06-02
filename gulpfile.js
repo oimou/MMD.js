@@ -4,7 +4,10 @@ var coffee = require('gulp-coffee')
 var concat = require('gulp-concat')
 
 gulp.task('build', function () {
-  gulp.src('src/*.coffee')
+  gulp.src([
+    'src/MMD.coffee',
+    'src/MMD.*.coffee'
+  ])
     .pipe(concat('MMD.coffee'))
     .pipe(gulp.dest('.'))
     .pipe(coffee({bare: true}).on('error', gutil.log))

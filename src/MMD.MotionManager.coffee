@@ -34,11 +34,11 @@ class MMD.MotionManager
     }
 
   addCameraLightMotion: (motion, merge_flag, frame_offset) ->
-    @addCameraMotoin(motion.camera, merge_flag, frame_offset)
+    @addCameraMotion(motion.camera, merge_flag, frame_offset)
     @addLightMotoin(motion.light, merge_flag, frame_offset)
     return
 
-  addCameraMotoin: (camera, merge_flag, frame_offset) ->
+  addCameraMotion: (camera, merge_flag, frame_offset) ->
     return if camera.length == 0
     if not merge_flag
       @cameraMotion = []
