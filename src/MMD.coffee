@@ -151,7 +151,7 @@ class this.MMD
       if toonIndex == -1 or # -1 is special (no shadow)
         !model.toon_file_names or # no toon_file_names section in PMD
         fileName == model.toon_file_names[toonIndex] # toonXX.bmp is in 'data' directory
-          fileName = 'data/' + fileName
+          fileName = 'lib/MMD.js/data/' + fileName
       else # otherwise the toon texture is in the model's directory
         fileName = model.directory + '/' + model.toon_file_names[toonIndex]
       material.textures.toon = @textureManager.get('toon', fileName)
